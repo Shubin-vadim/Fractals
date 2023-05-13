@@ -12,9 +12,11 @@ n_points_x = 250
 ymin = -1
 ymax = 1
 n_points_y = 250
-R = 1e-10
-C = -1
+R_default = 1e-10
+C_default = -1
 colors = ['b', 'g', 'r', 'y', 'k']
+px = 1
+py = 1
 
 
 def f(z: complex, c: complex) -> complex:
@@ -47,6 +49,10 @@ def plot_fractal(c, points_x=200, points_y=200, domain=(-1, 1, -1, 1), iters=100
     m = np.zeros((points_x, points_y))
     cmap = ListedColormap(colors)
     xmin, xmax, ymin, ymax = domain
+    xmin*=px
+    xmax*=px
+    ymin*=py
+    ymax*=py
     X_points = np.linspace(xmin, xmax, points_x)
     Y_points = np.linspace(ymin, ymax, points_y)
     for ix, x in enumerate(X_points):
@@ -63,6 +69,16 @@ def plot_fractal(c, points_x=200, points_y=200, domain=(-1, 1, -1, 1), iters=100
 
 
 if __name__ == "__main__":
+    print('Введите действительную часть комплексного числа C = ')
+    a = input()
+    a = 0 if len(a) == 0 else float(a)
+    print('Введите мнимую часть комплексного числа C = ')
+    b = input()
+    b = 0 if len(b) == 0 else float(b)
+    C = C_default if (a == 0 and b == 0) else complex(a, b)
+    print('Введите R = (0.001, 0.00001 и т.д)')
+    R = input()
+    R = R_default if len(R) == 0 else float(R)
     plot_fractal(C, points_x=n_points_x, points_y=n_points_y, domain=(xmin, xmax, ymin, ymax), iters=n_iter, r=R)
 
 
