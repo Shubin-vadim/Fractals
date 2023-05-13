@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fc2613f-a7c9-4c2d-b963-da31b59a7c21" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal.py" beforeDir="false" afterPath="$PROJECT_DIR$/fractal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +35,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/Vadim/Desktop/folders/For study/Универ/2 курс/2 семестр/Фракталы/Лаба",
+    "last_opened_file_path": "C:/Users/Vadim/Desktop/folders/Digit/Гомер/Destkop",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.fractal">
+  <component name="RunManager" selected="Python.main">
     <configuration name="fractal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Лаба" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.fractal" />
         <item itemvalue="Python.v2" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.newton_fractal" />
         <item itemvalue="Python.matplotlib_numpy (1)" />
       </list>

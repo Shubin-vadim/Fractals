@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="back_newton">
+    <file>nyuton.jpg</file>
+  </qresource>
+  <qresource prefix="button">
+    <file>space.jpg</file>
+  </qresource>
+</RCC>
