@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         self.background_lab.setLineWidth(0)
         self.background_lab.setText("")
         self.background_lab.setTextFormat(QtCore.Qt.AutoText)
-        pixmap_bg = QtGui.QPixmap(r"C:\Users\Vadim\Desktop\folders\For study\Универ\2 курс\2 семестр\Фракталы\Лаба\src\resources\nyuton.jpg")
+        pixmap_bg = QtGui.QPixmap(r"src\resources\nyuton.jpg")
         self.background_lab.setPixmap((pixmap_bg))
 
         self.background_lab.setScaledContents(True)
